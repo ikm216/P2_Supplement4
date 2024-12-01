@@ -21,4 +21,20 @@ public class su{
         hex.substring(16, 20),
         hex.substring(20, 32));
     }
+
+    public static String hashString(String string){
+        try{
+            MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+        byte[] bytes = messageDigest.digest(string.getBytes());
+
+        StringBuilder hex = new StringBuilder();
+        for(byte by: bytes){
+            hex.append(String.format("%02x", by));
+        }
+        return hex.toString();
+        }
+        catch (NoSuchAlgorithmException e){
+            throw new RuntimeException();
+        }
+    }
 }

@@ -14,7 +14,7 @@ public class test_java {
         String string = "chicken";
         String hash_string = su.hashString(string);
         Assert.assertNotNull(hash_string);
-        Assert.assertEquals(36, hash_string.length());
+        Assert.assertEquals(64, hash_string.length());
         Assert.assertTrue(hash_string.matches("[0-9a-f]+"));
     }
 }
