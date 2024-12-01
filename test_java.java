@@ -17,4 +17,14 @@ public class test_java {
         Assert.assertEquals(64, hash_string.length());
         Assert.assertTrue(hash_string.matches("[0-9a-f]+"));
     }
+
+    @Test
+    public void test_should_array_field_of_strings(){
+        arrString arr = new arrString(10);
+        String val = su.hexChars();
+        int i = 15;
+
+        arr.insert(val, i);
+        Assert.assertEquals(val, arr.getArr()[5]);
+    }
 }
