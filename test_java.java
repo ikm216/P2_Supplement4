@@ -8,4 +8,6 @@ public class test_java {
         Assert.assertEquals(36, hex.length());
         Assert.assertTrue(hex.matches("[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"));
     }
+
+    
 }

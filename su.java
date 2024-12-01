@@ -2,6 +2,11 @@ import java.security.*;
 
 public class su{
     public static String hexChars(){
+        /**
+     * Generates a random 32-character hexadecimal:
+     *
+     * @return A formatted string of random hexadecimal characters.
+     */
         SecureRandom rand = new SecureRandom();
         byte[] bytes = new byte[16];
         rand.nextBytes(bytes);
