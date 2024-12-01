@@ -23,6 +23,13 @@ public class su{
     }
 
     public static String hashString(String string){
+        /**
+     * Hashes a string.
+     *
+     * @param string The string to hash.
+     * @return The hashed string in hexadecimal format.
+     * @throws RuntimeException.
+     */
         try{
             MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
         byte[] bytes = messageDigest.digest(string.getBytes());
